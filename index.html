@@ -14,18 +14,13 @@
 
 <body>
   
-  <table id = "t_main" style="width:40%">
-    <tr id = "row_main">
-	 <td id = "photo_cell">
-		<img src="pic/photo.jpeg" alt="Фото" width="94" height="125">
-     </td>
-	 <td id = "contact" valign = "top">
-		<h2 id = "name">Соловьёв Андрей Владимирович</h2>
-	    <b><a id = "link" href = "https://github.com/endrewz/vacancy" target="_blank">Ссылка на Git</a></b>
-		<p><b>Опыт работы:</b> нет</p>
-	 </td>		
-    </tr>	
-  </table>
+  <div id = "main"> 
+	<img id = "photo" src="pic/photo.jpeg" alt="Фото" width="94" height="125" align="left" hspace = "10">
+	<h2  id = "name">Соловьёв Андрей Владимирович</h2>
+	<a   id = "link" href = "https://github.com/endrewz/vacancy" target="_blank">Ссылка на Git</a>
+	<p><b>Опыт работы:</b> <span id = "exp">нет</span></p>
+	<br>
+  </div>
   
   <div id = "date">
 	<label for="datei"><b class = "subtitles">Дата собеседования :</b></label>
@@ -125,7 +120,8 @@
 
 
 <footer>
-	<span>Резюме составлено 03.05.2018</span>
+	<br>
+	<span id = "foot">Резюме составлено: 03.05.2018</span>
 </footer>
 
 
