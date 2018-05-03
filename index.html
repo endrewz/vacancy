@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Вакансия Junior FontEnd Developer</title>
+  <meta name="description" content="Резюме">
+  <meta name="author" 	   content="Соловьев А.В.">
+  <link rel ="stylesheet"  href   ="css/styles.css?v=1.0">
+  <h1>Вакансия Junior FontEnd Developer</h1>
+</head>
+
+
+<body>
+  
+  <table id = "t_main" style="width:40%">
+    <tr id = "row_main">
+	 <td id = "photo_cell">
+		<img src="pic/photo.jpeg" alt="Фото" width="94" height="125">
+     </td>
+	 <td id = "contact" valign = "top">
+		<h2 id = "name">Соловьёв Андрей Владимирович</h2>
+	    <b><a id = "link" href = "https://github.com/endrewz/vacancy" target="_blank">Ссылка на Git</a></b>
+		<p><b>Опыт работы:</b> нет</p>
+	 </td>		
+    </tr>	
+  </table>
+  
+  <div id = "date">
+	<label for="datei"><b class = "subtitles">Дата собеседования :</b></label>
+	<input id ="datei" type="date" value="2018-05-02">
+	<img src="pic/calendar.png" alt="календарь" width="25" height="25">
+  </div>
+  
+  <br>
+  
+  <div id = "english">
+	<b class = "subtitles">Уровень английского :</b>
+	<p id = "r_english">
+	<input type="radio" id="r_eng1" name="english" value="bad">
+    <label for ="engl1">Плохо</label>
+	<input type="radio" id="r_eng2" name="english" value="middle" checked>
+    <label for ="engl2">Средний</label>
+	<input type="radio" id="r_eng3" name="english" value="good">
+    <label for ="engl3">Хорошо</label>
+	<input type="radio" id="r_eng4" name="english" value="perfect">
+    <label for ="engl4">Превосходно</label>	
+	</p>
+  </div>
+  
+  <form id = "skills">
+	<b class = "subtitles">Ключевые навыки :</b>
+	<ul id = "u_skills">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>  
+	<input type = "text"   name = "i_skills" size = "30" placeholder = "Введите навык ...">
+	<input type = "submit" value= "Добавить в список"</input>
+  </form>
+  
+  <br>
+  
+  <div id = "commun">
+  <b class = "subtitles">Коммуникабельность :</b>
+	<select name = "s_commun">
+		<option value="codder">Программист</option>
+		<option value="bad">Плохо</option>
+		<option value="middle">Средне</option>
+		<option selected value="good">Хорошо</option>
+		<option value="perfect">Превосходно</option>
+	</select> 
+  </div>
+  
+  <br>
+  
+  <div id = "salary">
+	<b class = "subtitles">Желаемая з/п :</b>
+	<input name = "i_salary" type = "number" size = "10" placeholder = "100000" value = "150000">
+  </div>  
+  
+  <br>
+  
+  <div id = "criteria">
+	<b class = "subtitles">Подходит по критериям :</b>
+	<br></br>
+	<input type="checkbox" id="c_english" value="english"> Знание английского
+	<input type="checkbox" id="c_salary"  value="salary">  Оклад
+	<input type="checkbox" id="c_skills"  value="skills">  Навыки
+	<input type="checkbox" id="c_ourman"  value="ourman" checked>  Сразу видно свой человек
+  </div>
+  
+  <br>
+  
+  <div id = "education">
+	<b class = "subtitles">Образование, курсы и т.п.</b>
+	<br></br>
+	<table id = "t_education" style="width:40%" border = "1" >
+	  <tr valign="top" >
+		<th>#</th>
+		<th>Сроки обучения</th>
+		<th>Наименование учебного заведения, курсов</th>
+	  </tr>
+	  <tr valign="top" align = "center">
+		<td>1</td>
+		<td>04.2018 - наст.время</td>
+		<td>Level Up! Web Developer</td>
+	  </tr>
+	  <tr valign="top" align = "center">
+		<td>2</td>
+		<td>09.2001 - 06.2006</td>
+		<td>СпбГуТ им.проф.М.А.Бонч-Бруевича</td>
+	  </tr>	
+	  <tr valign="top" align = "center">
+		<td>3</td>
+		<td>...</td>
+		<td>...</td>
+	  </tr>	
+	</table>
+  </div>
+
+  
+</body>
+
+
+<footer>
+	<span>Резюме составлено 03.05.2018</span>
+</footer>
+
+
+</html>
+
