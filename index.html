@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<title>Вакансия Junior FontEnd Developer</title>
 	<meta name="description" content="Резюме">
-	<meta name="author" 	   content="Соловьев А.В.">
+	<meta name="author" 	 content="Соловьев А.В.">
 	<link rel ="stylesheet"  href   ="css/styles.css?v=1.0">
 	<h1>Вакансия Junior FontEnd Developer</h1>
 </head>
@@ -14,7 +14,7 @@
 
 <body>
   
-	<div id = "main"> 
+	<div id = "main" class = "blur" > 
 		<img id = "photo" src="pic/photo.jpeg" alt="Фото" width="94" height="125" align="left" hspace = "10">
 		<h2  id = "name">Соловьёв Андрей Владимирович</h2>
 		<a   id = "link" href = "https://github.com/endrewz/vacancy" target="_blank">Ссылка на Git</a>
@@ -30,34 +30,34 @@
   
 	<br>
   
-	<div id = "english">
+	<div id = "english" class = "blur">
 		<b class = "subtitles">Уровень английского :</b>
 		<p id = "r_english">
-			<input type="radio" id="r_eng1" name="english" value="bad">
-			<label for ="engl1">Плохо</label>
-			<input type="radio" id="r_eng2" name="english" value="middle" checked>
-			<label for ="engl2">Средний</label>
-			<input type="radio" id="r_eng3" name="english" value="good">
-			<label for ="engl3">Хорошо</label>
-			<input type="radio" id="r_eng4" name="english" value="perfect">
-			<label for ="engl4">Превосходно</label>	
+			<input type="radio" id="r_eng1" name="english" class = "checkbox" value="bad">
+			<label for ="r_eng1">Плохо</label>
+			<input type="radio" id="r_eng2" name="english" class = "checkbox" value="middle" checked>
+			<label for ="r_eng2">Средний</label>
+			<input type="radio" id="r_eng3" name="english" class = "checkbox" value="good">
+			<label for ="r_eng3">Хорошо</label>
+			<input type="radio" id="r_eng4" name="english" class = "checkbox" value="perfect">
+			<label for ="r_eng4">Превосходно</label>	
 		</p>
 	</div>
   
 	<form id = "skills">
 		<b class = "subtitles">Ключевые навыки :</b>
-		<ul id = "u_skills">
+		<ul id = "u_skills" class="zebra" >
 			<li>HTML</li>
 			<li>CSS</li>
 			<li>JavaScript</li>
 		</ul>  
 		<input type = "text"   name = "i_skills" size = "30" placeholder = "Введите навык ...">
-		<input type = "submit" value= "Добавить в список"</input>
+		<input type = "button" value= "Добавить в список"</input>
 	</form>
   
 	<br>
   
-	<div id = "commun">
+	<div id = "commun"  class = "blur">
 		<b class = "subtitles">Коммуникабельность :</b>
 		<select name = "s_commun">
 			<option value="codder">Программист</option>
@@ -77,13 +77,17 @@
   
 	<br>
   
-	<div id = "criteria">
+	<div id = "criteria" class = "blur">
 		<b class = "subtitles">Подходит по критериям :</b>
 		<br></br>
-		<input type="checkbox" id="c_english" value="english"> Знание английского
-		<input type="checkbox" id="c_salary"  value="salary">  Оклад
-		<input type="checkbox" id="c_skills"  value="skills">  Навыки
-		<input type="checkbox" id="c_ourman"  value="ourman" checked>  Сразу видно свой человек
+		<input type="checkbox" id="c_english" value="english"> 
+		<label for = "c_english">Знание английского</label>
+		<input type="checkbox" id="c_salary"  value="salary">
+		<label for = "c_salary">Оклад</label>
+		<input type="checkbox" id="c_skills"  value="skills">  
+		<label for = "c_skills">Навыки</label>
+		<input type="checkbox" id="c_ourman"  value="ourman" checked>  
+		<label for = "c_ourman">Сразу видно свой человек</label>
 	</div>
   
 	<br>
@@ -91,23 +95,23 @@
 	<div id = "education">
 		<b class = "subtitles">Образование, курсы и т.п.</b>
 		<br></br>
-		<table id = "t_education" style="width:40%" border = "1" >
-			<tr valign="top" >
+		<table id = "t_education" border = "1" >
+			<tr>
 				<th>#</th>
 				<th>Сроки обучения</th>
 				<th>Наименование учебного заведения, курсов</th>
 			</tr>
-			<tr valign="top" align = "center">
+			<tr>
 				<td>1</td>
 				<td>04.2018 - наст.время</td>
 				<td>Level Up! Web Developer</td>
 			</tr>
-			<tr valign="top" align = "center">
+			<tr>
 				<td>2</td>
 				<td>09.2001 - 06.2006</td>
 				<td>СпбГуТ им.проф.М.А.Бонч-Бруевича</td>
 			</tr>	
-			<tr valign="top" align = "center">
+			<tr>
 				<td>3</td>
 				<td>...</td>
 				<td>...</td>
@@ -120,7 +124,7 @@
 
 <footer>
 	<br>
-	<span id = "foot">Резюме составлено: 03.05.2018</span>
+	<b><span class = "subtitles">Резюме составлено: 03.05.2018</span></b>
 </footer>
 
 
