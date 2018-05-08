@@ -8,27 +8,30 @@
 	<meta name="description" content="Резюме">
 	<meta name="author" 	 content="Соловьев А.В.">
 	<link rel ="stylesheet"  href   ="css/styles.css?v=1.0">
-	<h1>Вакансия Junior FontEnd Developer</h1>
 </head>
 
 
-<body>
-  
+<body><div id = "body" class="center" >
+	
+	<h1 class = "white">Вакансия Junior FontEnd Developer</h1>
+	
 	<div id = "main" class = "blur" >
-		<div id = "div_photo" style="display: inline-block">
+		<div id = "div_photo" class="inline">
 			<img id = "photo" src="pic/photo.jpeg" alt="Фото" width="94" height="125" hspace = "10" >
 		</div>
-		<div id = "contact" style="display: inline-block" >		
+		<div id = "contact" class="inline" >		
 			<h2  id = "name">Соловьёв Андрей Владимирович</h2>
 			<a   id = "link" href = "https://github.com/endrewz/vacancy" target="_blank">Ссылка на Git</a>
 			<p><b>Опыт работы:</b> <span id = "exp">нет</span></p>
 		</div>	
 	</div>
   
-	<div id = "date">
+	<div id = "date" class = "white">
 		<label for="datei"><b class = "subtitles">Дата собеседования :</b></label>
-		<input id ="datei" type="date" value="2018-05-02">
-		<img src="pic/calendar.png" alt="календарь" width="25" height="25">
+		<input id ="datei" type="date" value="2018-05-02" class="inline">
+		<div id = "calendar" class="inline">
+			<img src="pic/calendar.png" alt="календарь" width="25" height="25">
+		</div>	
 	</div>
   
 	<br>
@@ -47,7 +50,7 @@
 		</p>
 	</div>
   
-	<form id = "skills">
+	<form id = "skills" class = "white">
 		<b class = "subtitles">Ключевые навыки :</b>
 		<ul id = "u_skills" class="zebra" >
 			<li>HTML</li>
@@ -55,7 +58,7 @@
 			<li>JavaScript</li>
 		</ul>  
 		<input type = "text"   name = "i_skills" size = "30" placeholder = "Введите навык ...">
-		<input type = "button" value= "Добавить в список"</input>
+		<input type = "button" value = "Добавить в список" class = "button" ></input>
 	</form>
   
 	<br>
@@ -73,7 +76,7 @@
   
 	<br>
   
-	<div id = "salary">
+	<div id = "salary" class = "white">
 		<b class = "subtitles">Желаемая з/п :</b>
 		<input name = "i_salary" type = "number" size = "10" placeholder = "100000" value = "150000">
 	</div>  
@@ -95,7 +98,7 @@
   
 	<br>
   
-	<div id = "education">
+	<div id = "education" class = "white">
 		<b class = "subtitles">Образование, курсы и т.п.</b>
 		<br></br>
 		<table id = "t_education" border = "1" >
@@ -122,13 +125,8 @@
 		</table>
 	</div>
  
-</body>
+</div></body>
 
-
-<footer>
-	<br>
-	<b><span class = "subtitles">Резюме составлено: 03.05.2018</span></b>
-</footer>
 
 
 </html>

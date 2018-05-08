@@ -1,4 +1,25 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.center {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    height: 100%;
+  }
+
+.inline {
+	display: inline-block;
+	vertical-align: top;
+   }
+  
 .subtitles {
 	font-size: 14px;
 }
@@ -10,6 +31,14 @@ input:not([type="button"]){
 	padding:    2px 5px;	
 }
 
+.button{
+	font-size:     14px;
+	color:         blue;	
+	padding:       2px 5px;
+	border-radius: 8px;	
+	background:    linear-gradient(45deg, #EECFBA, #C5DDE8);
+	box-shadow:    0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 .zebra {
 	list-style:    none;
@@ -17,6 +46,7 @@ input:not([type="button"]){
 	border-radius: 50%;
 	padding:       0;
 	width:         calc( 40% - 10px );
+
 }
 .zebra li {
 	padding: 5px;
@@ -35,11 +65,17 @@ input:not([type="button"]){
 	padding:    5px 10px;
 }
 
+.white{
+	width:      calc( 40% - 20px );
+	padding:    10px 10px;
+}
+
+
 table {
 	font-size:       14px;
 	border-collapse: collapse;
 	text-align:      center;
-	width: 			 40%;
+	width: 			 100%;
 }
 th, td:first-child {
 	background: #AFCDE7;
