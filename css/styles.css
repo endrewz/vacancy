@@ -31,7 +31,7 @@ input:not([type="button"]){
 	padding:    2px 5px;	
 }
 
-.button{
+input[type=button]{
 	font-size:     14px;
 	color:         blue;	
 	padding:       2px 5px;
